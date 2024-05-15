@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>บันทึกข้อมูลอะไหล่</h1>
+        <from>
+            <div class="items">
+                <div class="item">
+                    <div class="label">
+                        <label>ยี่ห่อ</label>
+                    </div>
+                    <input type="text" class="text" id ="brand">
+                </div>
+                <div class="item">
+                    <div class="label">
+                        <label>ชื่อสินค้า</label>
+                    </div>
+                    <input type="text" class="text" id="productName">
+                </div>
+
+            </div>
+            <div class="items">
+                <div class="item">
+                    <div class="label">
+                        <label>ประเภท</label>
+                    </div>
+                    <input type="text" class="text" id="type">
+                </div>
+                <div class="item">
+                    <div class="label">
+                        <label>จำนวน</label>
+                    </div>
+                    <input type="number" min="0" class="nuimber" id="quantity">
+                </div>
+            </div>
+            
+        </from>
+        <button class="button" onclick="saveData()">บันทึก</button>
+
+        <div class="table">
+            <table id="productTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>ยี่ห่อ</th>
+                        <th>ชื่อสินค้า</th>
+                        <th>ประเภท</th>
+                        <th>จำนวน</th>
+                    </tr>
+                </thead>
+                <tbody>
+                 
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
