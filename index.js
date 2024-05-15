@@ -1,4 +1,4 @@
-const URL = "http://localhost:5000";
+const URL = "https://product-backend-fhe3.onrender.com";
 
 window.onload = async () => {
   await loadData();
